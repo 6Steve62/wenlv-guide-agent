@@ -1,0 +1,16 @@
+# 换行与编码：源码统一按 LF 入库，工作副本保持各自原样
+* text=auto eol=lf
+
+# 这些按二进制处理，不做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.docx binary
+*.pdf binary
+
+# GitHub 语言统计：页面主体是手写 HTML/CSS，不希望被当成"纯 HTML 仓库"盖过 JS
+*.html linguist-detectable=true
+*.js   linguist-detectable=true
